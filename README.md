@@ -13,9 +13,13 @@ gmx grompp -f md.mdp -c npt.gro -p topol.top -t npt.cpt -o md_0_1.tpr
 
 For riboswitch with cognate or synthetic ligand, you can run:
 ```bash
-gmx -deffnm md_0_1 -plumed plumed.production.dat  -cpi md_0_1.cpt
+gmx grompp -f md.mdp -c npt.gro -p topol.top -t npt.cpt -n index.ndx -o md_0_1.tpr
 ```
 
+You can run `mdrun` to start the enhanced MD simulation:
+```bash
+gmx mdrun md_0_1 -plumed plumed.production.dat
+```
 The associated PLUMED files can be found in the `production` folders.
 
 To calculate the  C2-C2 distances, please refer to the files in the `analysis` folders.
