@@ -65,7 +65,7 @@ METAD ...
 LABEL=metad
 ARG=rc1 SIGMA=0.09 HEIGHT=1.0 BIASFACTOR=10 TEMP=300.0 PACE=2000
 GRID_MIN=-4.96 GRID_MAX=3.43 GRID_BIN=200
-REWEIGHTING_NGRID=200
+CALC_RCT
 ... METAD
 
 PRINT ARG=rmsd1,rmsd2,rmsd3,rmsd4,rmsd5,rmsd6,rmsd7,rmsd8,rmsd9,rmsd10,rmsd11,rmsd12,rmsd13,rmsd14,rmsd15,rmsd16,rmsd17,rmsd18,rmsd19,rmsd20,rmsd21,rmsd22,rmsd23,rmsd24,rmsd25,rmsd26,rmsd27,rmsd28,rmsd29,rmsd30,rmsd31,rmsd32,rmsd33 STRIDE=10 FILE=6e1w_rmsd
